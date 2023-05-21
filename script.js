@@ -9,7 +9,7 @@ function cadastrar() {
   };
 
   // Enviar a solicitação POST usando a API Fetch
-  fetch('http://localhost:3000/cadastrar', {
+  fetch('https://voluble-travesseiro-3e9e2f.netlify.app', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
