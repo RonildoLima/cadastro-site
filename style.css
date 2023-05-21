@@ -1,0 +1,141 @@
+/* Estilos para o formulário de cadastro */
+h1{
+  position: absolute;
+width: 838px;
+height: 370px;
+left: 541px;
+top: -30px;
+
+font-family: 'Zen Antique';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 185px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 35px 17px #000000;
+}
+
+h2{
+position: absolute;
+width: 211px;
+height: 70px;
+left: 853px;
+top: 290px;
+
+font-family: 'Zen Antique';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 70px;
+z-index: 2;
+text-align: center;
+color: #FFFFFF;
+}
+
+h3{
+position: absolute;
+text-align: center;
+width: 299px;
+height: 35px;
+left: 810px;
+top: 780px;
+
+font-family: 'Zen Antique';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+color: #FFFFFF;
+}
+h4{
+position: absolute;
+text-align: center;
+width: 208px;
+height: 35px;
+left: 872px;
+top: 548px;
+
+font-family: 'Zen Antique';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+color: #FFFFFF;
+}
+
+.box{
+box-sizing: border-box;
+position: absolute;
+width: 540px;
+height: 456px;
+left: 691px;
+top: 295px;
+z-index: -1;
+background: rgba(71, 71, 71, 0.7);
+filter: blur(5px);
+border-radius: 46px; 
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/115553/pexels-photo-115553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+input[type="text"]{
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  left: 785px;
+  top: 410px;
+  border-radius: 20px;
+}
+input[type="email"]{
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  left: 784px;
+  top: 510px;
+  border-radius: 20px;
+
+}
+input[type="password"]{
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  left: 784px;
+  top: 610px;
+  border-radius: 20px;
+}
+
+input[type="button"]{
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  left: 785px;
+  top: 637px;
+  border-radius: 20px;
+}
+
+.btn-cadastrar {
+  font-size: 30px;
+  font-family: 'Zen Antique';
+}
+
+input[type="checkbox"]{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 841px;
+  top: 580px;
+
+}
+  
