@@ -84,5 +84,5 @@ app.post('/cadastrar', (req, res) => {
 
 // Iniciar o servidor
 app.listen(port, () => {
-  console.log(`Servidor rodando em https://voluble-travesseiro-3e9e2f.netlify.app:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port}`);
 });
