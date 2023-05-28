@@ -1,6 +1,17 @@
+function validarEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
 function cadastrar() {
   var nome = document.getElementById('nome').value;
   var email = document.getElementById('email').value;
+
+  // Verificar se o email é válido
+  if (!validarEmail(email)) {
+    console.error('Email inválido.');
+    return; // Interromper o processo de envio dos dados
+  }
 
   // Criar o objeto de dados
   var data = {
