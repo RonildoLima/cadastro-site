@@ -9,6 +9,7 @@ function cadastrar() {
 
   // Verificar se o email é válido
   if (!validarEmail(email)) {
+    exibirPopup();
     console.error('Email inválido.');
     return; // Interromper o processo de envio dos dados
   }
@@ -37,4 +38,13 @@ function cadastrar() {
     .catch(function(error) {
       console.error('Erro ao enviar a solicitação:', error);
     });
+}
+
+function exibirPopup() {
+  var popup = document.getElementById("popup");
+  popup.classList.remove("hidden");
+  
+  setTimeout(function() {
+    popup.classList.add("hidden");
+  }, 3000); // Oculta o popup depois de 3 segundos (3000 milissegundos)
 }
