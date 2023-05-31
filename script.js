@@ -31,7 +31,7 @@ function cadastrar() {
     .then(function(response) {
       if (response.ok) {
         console.log('Dados cadastrados com sucesso!');
-        window.location.href = 'inicio.html';
+        window.location.href = 'index.html';
       } else {
         console.error('Erro ao cadastrar os dados.');
       }

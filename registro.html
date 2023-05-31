@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+  <h1>Daily News</h1>
+  <h2>Registro</h2>
+
+  <form id="meuFormulario">
+    <h4><a href="termo.html" style="text-decoration: none; color: inherit;" >Confirmar termos</a></h4>
+
+    <label for="nome">Nome:</label>
+    <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Digite seu email" id="email" name="email" required><br>
+    <div id="popup" class="popup hidden">
+      Email inválido! Tente novamente.
+    </div>
+
+    <div class="box"></div>
+    <input type="checkbox" id="termos">
+
+    <input type="button" value="Cadastrar" onclick="cadastrar()" onclick="verificarCadastro()" class="btn-cadastrar">
+
+  </form>
+</body>
+</html>
