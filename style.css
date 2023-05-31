@@ -55,6 +55,7 @@
     top: 548px;
     font-size: 24px;
     line-height: 35px;
+    cursor: pointer;
   }
   
   .box {
@@ -243,9 +244,8 @@
   }
   .popup {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 63%;
     background-color: #f1f1f1;
     padding: 20px;
     border: 1px solid #ccc;
@@ -257,6 +257,10 @@
   .hidden {
     display: none;
   }
+
+h4:hover{
+  border-bottom: 1px solid #fff;
+}
   
   
   

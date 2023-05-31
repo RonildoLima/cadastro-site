@@ -3,14 +3,15 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
-    <title>Formulário de Cadastro</title>
+    <title>Registro</title>
 </head>
 <body>
   <h1>Daily News</h1>
   <h2>Registro</h2>
 
   <form id="meuFormulario">
-    <h4>Confirmar termos</h4>
+    <h4><a href="termo.html" style="text-decoration: none; color: inherit;" >Confirmar termos</a></h4>
+
     <label for="nome">Nome:</label>
     <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required><br>
 
@@ -23,7 +24,8 @@
     <div class="box"></div>
     <input type="checkbox" id="termos">
 
-    <input type="button" value="Cadastrar" onclick="cadastrar()" class="btn-cadastrar">
+    <input type="button" value="Cadastrar" onclick="cadastrar()" onclick="verificarCadastro()" class="btn-cadastrar">
+
   </form>
 </body>
 </html>
