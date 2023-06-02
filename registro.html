@@ -17,12 +17,16 @@
 
     <label for="email">Email:</label>
     <input type="email" placeholder="Digite seu email" id="email" name="email" required><br>
+   
     <div id="popup" class="popup hidden">
       Email inválido! Tente novamente.
     </div>
+    <div id="popup-checkbox" class="popup hidden">
+      Confirme a leitura dos termos
+    </div>
 
     <div class="box"></div>
-    <input type="checkbox" id="termos">
+    <input type="checkbox" id="myCheckbox">
 
     <input type="button" value="Cadastrar" onclick="cadastrar()" onclick="verificarCadastro()" class="btn-cadastrar">
 
