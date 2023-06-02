@@ -36,18 +36,19 @@ app.use(bodyParser.json());
 
 // Rota para receber os dados do formulário
 app.post('/cadastrar', (req, res) => {
-  const { nome, email } = req.body;
+  const { nome, email, categoria} = req.body;
 
   // Consulta SQL para criar a tabela se ela não existir
   const createTableSql = `CREATE TABLE IF NOT EXISTS tabela_usuarios (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL
+    email VARCHAR(255) NOT NULL,
+    categoria VARCHAR(255) NOT NULL
   )`;
 
   // Consulta SQL para inserir os dados na tabela
-  const insertDataSql = 'INSERT INTO tabela_usuarios (nome, email) VALUES ($1, $2)';
-  const values = [nome, email];
+  const insertDataSql = 'INSERT INTO tabela_usuarios (nome, email, categoria) VALUES ($1, $2, $3)';
+  const values = [nome, email,categoria];
 
   // Conectar ao banco de dados usando a pool de conexões
   pool.connect((err, client, release) => {

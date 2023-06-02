@@ -1,3 +1,9 @@
+
+function verificarCheckboxSelecionado(idCheckbox) {
+  const checkbox = document.getElementById(idCheckbox);
+  return checkbox.checked;
+}
+
 function validarEmail(email) {
   var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
@@ -13,11 +19,19 @@ function cadastrar() {
     console.error('Email inválido.');
     return; // Interromper o processo de envio dos dados
   }
+  
+  // Verificar se a checkbox está selecionada
+  if (!verificarCheckboxSelecionado('myCheckbox')) {
+    exibirPopupCheck();
+    console.error('A checkbox não está selecionada.');
+    return; // Interromper o processo de envio dos dados
+  }
 
   // Criar o objeto de dados
   var data = {
     nome: nome,
-    email: email
+    email: email,
+    categoria: "Tecnologia"
   };
 
   // Enviar a solicitação POST usando a API Fetch
@@ -47,5 +61,12 @@ function exibirPopup() {
   
   setTimeout(function() {
     popup.classList.add("hidden");
-  }, 3000); // Oculta o popup depois de 3 segundos (3000 milissegundos)
-}
+  }, 3000); }
+
+function exibirPopupCheck() {
+  var popup = document.getElementById("popup-checkbox");
+  popup.classList.remove("hidden");
+    
+    setTimeout(function() {
+      popup.classList.add("hidden");
+    }, 3000); }
