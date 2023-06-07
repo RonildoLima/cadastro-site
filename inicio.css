@@ -164,11 +164,8 @@ margin-right: 20px;
     margin-right: 60px;
     font-size: 25px;
     font-size: clamp(5px, 2vw,20px);
-}
-
-.section p:hover{
-    filter: drop-shadow(0 0 20px #ffffff
-    );
+    z-index: -1;
+    cursor: pointer;
 }
 
 .section h3:hover{
