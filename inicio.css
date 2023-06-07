@@ -173,12 +173,12 @@ margin-right: 20px;
 }
 footer {
     text-align: center;
+    line-height: 1;
   }
   
   footer p {
     color: #ffffff;
     font-size: clamp(3px, 5vw, 30px);
-    
   }
   
   footer i {
@@ -189,6 +189,7 @@ footer {
     margin-bottom: 50px; /* Margem de 50 pixels no final da página */
 }
 .footer-container {
+    margin-top: 3rem;
     background: rgba(0, 0, 0, 0.5); /* Cor de fundo do container */
     padding: 20px; /* Espaçamento interno do container */
 }
@@ -266,6 +267,7 @@ p{
 }
 footer {
     text-align: center;
+    line-height: 0;
   }
   
   footer p {
