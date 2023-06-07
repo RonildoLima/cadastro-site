@@ -23,8 +23,7 @@ height: 10%;
 left: 0px;
 top: 0px;
 
-background: rgba(125, 125, 125, 0.75);
-opacity: 0.75;
+background: rgba(125, 125, 125);
 }
 .box-sobre {
     box-sizing: content-box;
@@ -50,6 +49,7 @@ line-height: 93px;
 color: #FFFFFF;
 } 
 h2{
+z-index: -1;
 position: absolute;
 width: 344px;
 height: 70px;
@@ -154,6 +154,7 @@ margin-right: 20px;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: clamp(8px, 4vw,25px);
+    z-index: -1;
 }
 
 .section p {
@@ -166,6 +167,7 @@ margin-right: 20px;
     font-size: clamp(5px, 2vw,20px);
     z-index: -1;
     cursor: pointer;
+    z-index: -1;
 }
 
 .section h3:hover{
