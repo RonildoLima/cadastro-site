@@ -21,11 +21,12 @@ height: 10%;
 left: 0px;
 top: 0px;
 
-background: rgba(125, 125, 125, 0.75);
-opacity: 0.75;
+background: rgba(125, 125, 125);
+z-index: 1;
 }
 
 h1{
+  z-index: 1;
 position: fixed;
 left: 20px;
 top: -35px;
@@ -50,6 +51,7 @@ h2 {
     font-size: clamp(10px, 3vw,48px);
     line-height: 70px;
     color: #FFFFFF;
+    z-index: 0;
 }
 h3{
     position: absolute;
@@ -87,6 +89,7 @@ p{
     position: fixed;
     top: 15px;
     right: 10px;
+    z-index: 1;
   }
   
   .menu-item {
@@ -100,6 +103,7 @@ p{
     font-size: clamp(10px, 3vw,38px);
     line-height: 60px;
     text-decoration: none;
+    z-index: 1;
   }
   .menu-item:hover{
     border-bottom: 1px solid #fff;
