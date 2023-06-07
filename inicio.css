@@ -249,21 +249,31 @@ body {
     height: 10%;
     left: 0px;
     top: 0px;
-    
-    background: rgba(125, 125, 125, 0.75);
-    opacity: 0.75;
+    background: rgba(125, 125, 125);
     }
 .section img {
-    flex: 0 0 auto;
+    position: relative;
     max-width: 80%;
     width: 500px;
-    margin: 0 auto; /* Define as margens superior e inferior como 0 e as margens horizontal esquerda e direita como automáticas para centralizar a imagem. */
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: -1;
 }
 h3{
     color: #FFFFFF;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background: rgba(89, 88, 88, 0.5); /* Cor do retângulo de fundo */
+    padding: 5px;
+    margin: 5px;
+
 }
 p{
     color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
 }
 footer {
     text-align: center;
